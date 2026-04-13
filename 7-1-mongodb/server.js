@@ -188,7 +188,7 @@
 import mongoose from "mongoose";
 
 // establish connection
-mongoose.connect("mongodb+srv://HasanDB:<db_password>@cluster0.rygtjue.mongodb.net/TestDB");
+mongoose.connect("mongodb+srv://s202277080_db_user:GnIcTrv1kKi1NrKW@cluster0.rygtjue.mongodb.net/TestDB");
 
 // define schema
 const studentSchema = new mongoose.Schema({
