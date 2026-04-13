@@ -192,7 +192,7 @@ dotenv.config();
 
 
 // establish connection
-mongoose.connect("mongodb+srv://s202277080_db_user:GnIcTrv1kKi1NrKW@cluster0.rygtjue.mongodb.net/TestDB")
+mongoose.connect(process.env.MONGO_URI)
 .then(() => console.log("✅ Connected to MongoDB"))
 .catch((err) => console.log("❌ Connection error: ", err));
 
