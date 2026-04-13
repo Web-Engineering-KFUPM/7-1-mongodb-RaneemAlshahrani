@@ -186,9 +186,16 @@
 
 // import mongoose
 import mongoose from "mongoose";
+import dotenv from "dotenv";
+dotenv.config();
+
+
 
 // establish connection
-mongoose.connect("mongodb+srv://s202277080_db_user:GnIcTrv1kKi1NrKW@cluster0.rygtjue.mongodb.net/TestDB");
+mongoose.connect("mongodb+srv://s202277080_db_user:GnIcTrv1kKi1NrKW@cluster0.rygtjue.mongodb.net/TestDB")
+.then(() => console.log("✅ Connected to MongoDB"))
+.catch((err) => console.log("❌ Connection error: ", err));
+
 
 // define schema
 const studentSchema = new mongoose.Schema({
